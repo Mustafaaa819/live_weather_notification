@@ -58,7 +58,7 @@ Instead of putting your API key directly into the Python code:
 API_KEY=your_secret_openweather_api_key
 Then load it like this in your script:
 
-python
+
 from dotenv import load_dotenv
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
@@ -68,17 +68,13 @@ API_KEY = os.getenv("API_KEY")
 🌍 Customizing for YOUR City
 Just open either code.py or notify.py and replace this line:
 
-python
-Copy
+
 CITY = "Tank, PK"  # 👈 change this!
 Example:
 
-python
-Copy
 CITY = "Lahore, PK"
 💡 Requirements (Install Once)
-bash
-Copy
+
 pip install requests python-dotenv plyer win10toast
 
 
@@ -100,10 +96,6 @@ C:\Users\<YourUsername>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\St
  Now your script runs automatically on every login.
 
 🔐 Protecting Your API Key
-Create a .gitignore file and add:
-
-markdown
-Copy
 .env
 *.vbs
 *.bat
